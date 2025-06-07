@@ -57,7 +57,7 @@ export function Intro() {
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+            <NavHashLink smooth to="#contact" className="button">Contato</NavHashLink>
           </BrowserRouter>
         </motion.div>
         
