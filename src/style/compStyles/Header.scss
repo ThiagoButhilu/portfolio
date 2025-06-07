@@ -14,6 +14,12 @@ $blue: #2196F3;
   border-radius: $radius;
 }
 
+.header_position {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
 // _header.scss
 .container {
   display: flex;
@@ -22,9 +28,6 @@ $blue: #2196F3;
   padding: 1.8rem 10rem;
   background-color: rgba(33, 33, 33, 0.5);
   backdrop-filter: blur(6px);
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   z-index: 1000;
 

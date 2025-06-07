@@ -1,5 +1,6 @@
 @import './compStyles/Header.scss';
 @import './compStyles/Intro.scss';
+@import './compStyles/Main.scss';
 // _variables.scss
 $pink: #E31F71;
 $black: #212121;
@@ -73,7 +74,6 @@ $blue: #016fb9;
 }
 
 
-
 ul,
 li {
   text-decoration: none;
@@ -97,6 +97,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--black);
   color: #FFFF;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 body,

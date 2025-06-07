@@ -5,7 +5,7 @@ import resume from '../../assets/THIAGO_ARAUJO_RODRIGUES.docx'
 
 function Header() {
     return (
-        <div className="header-fixed container">
+        <div className="header-fixed header_position container">
             <Router>
                 
                     <HashLink className='logo'>
