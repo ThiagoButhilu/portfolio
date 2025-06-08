@@ -1,9 +1,9 @@
+
 .intro{
   padding-top: 15%;
   display: flex;
   justify-content: space-between;
   gap: 8rem;
-  background: rgba(0,0,0,0);
   z-index: 1;
   .hero-text{
     & > p{
@@ -23,7 +23,8 @@
       margin-bottom: 5rem;
     }
   }
-// New added
+
+
   .social-media{
     display: inline-flex;
     align-items: center;

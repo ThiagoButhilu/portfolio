@@ -12,11 +12,11 @@ function Header() {
                         <span>Thiago Araujo</span>
                     </HashLink>
                 <nav>
-                    <NavHashLink>
+                    <NavHashLink to={"/#home"} smooth>
                         Inicio
                     </NavHashLink>
-                    <NavHashLink>
-                        Sobre mim
+                    <NavHashLink to={"/#about"} smooth>
+                        Sobre mim  
                     </NavHashLink>
                     <NavHashLink>
                         Projetos

@@ -15,8 +15,12 @@ export function Intro() {
       <div className="hero-text">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}   
+          vviewport={{
+            once: false,
+            amount: "some",
+            margin: "-50px 0px"
+          }}
           transition={{ duration: 0.5, delay: 0 }}
         >
           Olá <img src={Hello} alt="Hello" width="20px"/>, Sou
@@ -25,7 +29,7 @@ export function Intro() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Thiago Araujo
@@ -34,7 +38,7 @@ export function Intro() {
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           Software Engineer
@@ -44,7 +48,7 @@ export function Intro() {
           className="small-resume"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           1 Year Experience
@@ -53,7 +57,7 @@ export function Intro() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           <BrowserRouter>
@@ -64,7 +68,7 @@ export function Intro() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 1 }}
         />
             <div className='social-media'>
@@ -103,7 +107,7 @@ export function Intro() {
             className="hero-image"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.5, delay: 1 }}
             >
             <img src={Illustration} alt='illustration'/>

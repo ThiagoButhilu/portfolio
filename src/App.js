@@ -5,6 +5,7 @@ import Header from './components/Header/header'
 import { Intro } from './components/Intro/Intro';
 import { Project } from './components/Project/project'
 
+
 import './style/core.scss';
 
 function App() {
