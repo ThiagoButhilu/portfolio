@@ -12,38 +12,53 @@ function Main() {
     return (
         <div className="container main" id='about' name='about'>
             <div style={{width: '50%'}}>
-                <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                <motion.div>
+                    <motion.label 
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: false }}
-                        transition={{ duration: 0.5, delay: 0 }}
-                >
-                    <motion.label>
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    >
                         <h2>Sobre mim</h2>
                     </motion.label>
-                        <p>Olá! Sou Thiago Araujo, desenvolvedor front-end apaixonado por criar interfaces modernas e experiências digitais memoráveis. Com 26 anos e uma paixão inabalável pela tecnologia, dedico-me a transformar designs em realidade através do código.</p>
+                        <motion.p 
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.5, delay: 0.7 }}
+                        >Olá! Sou Thiago Araujo, desenvolvedor front-end apaixonado por criar interfaces modernas e experiências digitais memoráveis. Com 26 anos e uma paixão inabalável pela tecnologia, dedico-me a transformar designs em realidade através do código.</motion.p>
 
-                        <p>Como desenvolvedor front-end, sou especializado em criar soluções web inovadoras que combinam performance, acessibilidade e design de ponta. Meu foco está em desenvolver aplicações que não apenas funcionam perfeitamente, mas também proporcionam uma experiência única aos usuários.</p>
+                        <motion.p
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.5, delay: 0.9 }}
+                        >Como desenvolvedor front-end, sou especializado em criar soluções web inovadoras que combinam performance, acessibilidade e design de ponta. Meu foco está em desenvolver aplicações que não apenas funcionam perfeitamente, mas também proporcionam uma experiência única aos usuários.</motion.p>
 
-                        <p>Estou sempre em busca de novos desafios e oportunidades para expandir minhas habilidades técnicas, mantendo-me atualizado com as últimas tendências e tecnologias do mercado.</p>
+                        <motion.p
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.5, delay: 1.1 }}
+                        >Estou sempre em busca de novos desafios e oportunidades para expandir minhas habilidades técnicas, mantendo-me atualizado com as últimas tendências e tecnologias do mercado.</motion.p>
                 </motion.div>
                 <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ duration: 0.5, delay: 0 }}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.5, delay: 1 }}
                 >
                     <label><h2>Education</h2></label>
-                    <p><h4>Master of Computer Applications (MCA)</h4>
-                        Vellore Institute of Technology, Chennai | July 2023 - Present
+                    <h4>Master of Computer Applications (MCA)</h4>
+                        <p>Vellore Institute of Technology, Chennai | July 2023 - Present
 
                         8.09 CGPA</p>
                 </motion.div>
                 <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: false }}
-                        transition={{ duration: 0.5, delay: 0 }}
+                        transition={{ duration: 0.5, delay: 1 }}
                 >
                     <label><h2>Principais habilidades</h2></label>
                     <div className='container-img'>
@@ -57,7 +72,7 @@ function Main() {
             </div>
             <motion.div
                 className="hero-image"
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.5, delay: 0.5 }}

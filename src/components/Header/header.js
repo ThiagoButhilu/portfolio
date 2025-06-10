@@ -1,6 +1,8 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 
+import Typing from './../typing'
+import mouseClick from '../../assets/White.png'
 import resume from '../../assets/THIAGO_ARAUJO_RODRIGUES.docx'
 
 function Header() {
@@ -9,7 +11,7 @@ function Header() {
             <Router>
                 
                     <HashLink className='logo'>
-                        <span>Thiago Araujo</span>
+                        <span><Typing></Typing></span>
                     </HashLink>
                 <nav>
                     <NavHashLink to={"/#home"} smooth>
@@ -18,7 +20,7 @@ function Header() {
                     <NavHashLink to={"/#about"} smooth>
                         Sobre mim  
                     </NavHashLink>
-                    <NavHashLink>
+                    <NavHashLink to={"/#projects"} smooth>
                         Projetos
                     </NavHashLink>
                     <NavHashLink>

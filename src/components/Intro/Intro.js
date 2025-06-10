@@ -41,7 +41,7 @@ export function Intro() {
           viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Software Engineer
+          Desenvolvedor Front-End
         </motion.h3>
         
         <motion.p
@@ -51,17 +51,18 @@ export function Intro() {
           viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          1 Year Experience
+          6 anos de experiência
         </motion.p>
         
         <motion.div
+        className='clickable'
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contato</NavHashLink>
+            <NavHashLink smooth to="#contact">Contato</NavHashLink>
           </BrowserRouter>
         </motion.div>
         
@@ -71,7 +72,11 @@ export function Intro() {
           viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 1 }}
         />
-            <div className='social-media'>
+            <motion.div className='social-media'
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 1 }}>
                <a
                     href="https://www.linkedin.com/in/codevinayak"
                     target="_blank"
@@ -100,9 +105,9 @@ export function Intro() {
                     >
                     <img src={telegram} alt="telegram" />
                     </a> 
-            </div>
+            </motion.div>
         </div>
-        <div>
+          <div>
             <motion.div
             className="hero-image"
             initial={{ opacity: 0, x: -20 }}
@@ -112,7 +117,8 @@ export function Intro() {
             >
             <img src={Illustration} alt='illustration'/>
             </motion.div>
-      </div>
+          </div>
+            
     </div>
   )
 }

@@ -20,166 +20,22 @@ $blue: #2196F3;
     left: 0;
   }
 
-// _header.scss
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.8rem 10rem;
-  backdrop-filter: blur(6px);
-  width: 100vw;
-  z-index: 1000;
-
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
-
+  header-fixed {
+    @include transition(all, 0.5s, ease);
+    background-color: rgba(245, 245, 245, 0.5);
+    
     a {
-      color: #FFFF;
-      padding: 0.6rem;
-      font-family: 'Red Hat Display', sans-serif;
-      font-weight: 500;
-      text-transform: uppercase;
-      @include transition(filter, 0.25s, ease);
-      
-      &.button {
-        padding: 0.6rem 2rem;
-      }
-
-      &:hover {
-        filter: brightness(0.6);
-      }
+      @include transition(all, 0.5s, ease);
+      color: black;
     }
 
-    .menu-container {
-      cursor: pointer;
-      padding: 0.6rem 0;
+    .menu,
+    .menu:before,
+    .menu:after {
+      background-color: var(--black);
     }
 
-    .menu {
-      width: 2rem;
-      height: 0.2rem;
-      background: #FFFF;
-      position: relative;
-      cursor: pointer;
-      display: none;
-
-      &:before {
-        content: "";
-        position: absolute;
-        bottom: 0.5rem;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0.5rem;
-      }
-
-      &.active:before {
-        bottom: 0;
-        transform: rotate(45deg);
-      }
-
-      &.active:after {
-        top: 0;
-        transform: rotate(135deg);
-      }
-
-      &.active {
-        background-color: rgba(0, 0, 0, 0);
-      }
-
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 0.2rem;
-        background: #FFFF;
-        cursor: pointer;
-        @include transition(all, 0.6s, ease);
-      }
-    }
-
-
-    label {
-      cursor: pointer;
-      text-indent: -9999px;
-      width: 55px;
-      height: 30px;
-      background: var(--green);
-      display: block;
-      justify-content: center;
-      align-items: center;
-      @include border-radius(100px);
-      position: relative;
-      margin-left: auto;
-      right: 10px;
-    }
-
-    label:after {
-      content: '';
-      background: #FFF;
-      width: 20px;
-      height: 20px;
-      @include border-radius(50%);
-      position: absolute;
-      top: 5px;
-      left: 4px;
-      @include transition(all, 0.32s, cubic-bezier(0.68, -0.55, 0.27, 1.55));
-    }
-
-    input:checked + label {
-      background: var(--pink);
-    }
-
-    input:checked + label:after {
-      left: calc(100% - 5px);
-      transform: translateX(-100%);
+    .menu.active {
+      background-color: rgba(85, 85, 85, 0);
     }
   }
-
-  @media only screen and (max-width: 800px) {
-    label {
-      position: relative;
-    }
-  }
-
-  @media (max-width: 960px) {
-    padding: 1.8rem 3rem;
-    .menu {
-      display: block;
-    }
-
-    nav {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      overflow: hidden;
-      opacity: 0;
-      visibility: hidden;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
-      background: var(--blue);
-      top: 0;
-      left: 0;
-      @include transition(opacity, 0.25s, ease);
-
-      background-color: var(--green);
-      a.button {
-        background-color: var(--pink);
-      }
-
-      &.active {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-}
